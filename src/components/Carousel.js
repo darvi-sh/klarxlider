@@ -21,7 +21,7 @@ export default function Carousel(props) {
 
         slides.current.style.transform = `translateX(${-(viewportWidth * turn)}px)`;
 
-    }, [turn, slidesViewport]);
+    }, [turn, slidesViewport, slides]);
 
     return (
         <div className="carousel-wrapper">

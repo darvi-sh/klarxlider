@@ -15,6 +15,10 @@
     cursor: pointer;
 }
 
+.navigation-button[disabled] {
+    background-color: rgb(225, 246, 255);
+}
+
 .slides-viewport {
     width: 350px;
     overflow: hidden;
@@ -22,4 +26,5 @@
 
 .slides {
     display: inline-flex;
+    transition: transform 500ms ease-in-out;
 }
