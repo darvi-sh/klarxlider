@@ -10,6 +10,9 @@ export default function Carousel(props) {
     const MIN_LIMIT = 0;
     const MAX_LIMIT = props.slides.length - 1;
 
+    // in order to implement looping effect
+    // we can propvide a prop and
+    // detect the limits and setTurn to the opposite limit
     function goTo(moveValue = 1) {
         setTurn(Math.max(Math.min(turn + moveValue, MAX_LIMIT), MIN_LIMIT));
     }
@@ -20,23 +23,24 @@ export default function Carousel(props) {
                 onClick={() =>
                     goTo( -1 )
                 }
-            >Previous</button>
+            >&lt;</button>
 
-            Turn of { turn }
-            { props.slides.map( (slide, index) =>
-                <Slide
-                    turn={ turn }
-                    key={ index }
-                    index={ index }
-                    slide={ slide }
-                /> )
-            }
+            <div className="slides">
+                { props.slides.map( (slide, index) =>
+                    <Slide
+                        turn={ turn }
+                        key={ index }
+                        index={ index }
+                        slide={ slide }
+                    /> )
+                }
+            </div>
 
             <button
                 onClick={() =>
                     goTo( 1 )
                 }
-            >Next</button>
+            >&gt;</button>
         </div>
     )
 }
