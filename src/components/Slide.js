@@ -4,10 +4,12 @@ import './Slide.css';
 
 export default function Slide(props) {
     return (
-        <div className={ "slide" + (props.turn === props.index ? ` current` : ``) }>
+        <div className={
+            "slide" + props.className
+            }>
             <img
                 src={ props.slide }
-                alt={ `${ props.index }` }
+                alt={ `${ props.slide }` }
             />
         </div>
     )

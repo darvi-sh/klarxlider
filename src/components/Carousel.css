@@ -1,3 +1,25 @@
 .carousel-wrapper {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 440px;
+}
+
+.navigation-button {
+    background-color: rgb(190, 237, 255);
+    border: 0 none;
+    border-radius: 50%;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.slides-viewport {
+    width: 350px;
+    overflow: hidden;
+}
+
+.slides {
+    display: inline-flex;
 }
