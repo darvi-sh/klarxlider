@@ -6,11 +6,11 @@ import './App.css';
 function App() {
   const slides = [
     "https://via.placeholder.com/350x150/def",
-    "https://via.placeholder.com/350x150/cde",
-    "https://via.placeholder.com/350x150/bcd",
-    "https://via.placeholder.com/350x150/abc",
-    "https://via.placeholder.com/350x150/9ab",
-    "https://via.placeholder.com/350x150/89a",
+    "https://via.placeholder.com/350x150/fed",
+    "https://via.placeholder.com/350x150/dfe",
+    "https://via.placeholder.com/350x150/fde",
+    "https://via.placeholder.com/350x150/edf",
+    "https://via.placeholder.com/350x150/efd",
   ];
 
   return (
